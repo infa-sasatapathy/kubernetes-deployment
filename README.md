@@ -10,7 +10,7 @@ Both strategies are widely used in production to safely roll out new versions of
 ---
 
 ## 📂 Repository Structure
-
+```
 ├── blue-green/
 │ ├── blue-deployment.yaml
 │ ├── green-deployment.yaml
@@ -22,7 +22,7 @@ Both strategies are widely used in production to safely roll out new versions of
 ├── canary-deployment.yaml # Canary (v2)
 ├── service.yaml
 └── myapp-ingress.yaml
-
+```
 
 ---
 
