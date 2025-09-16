@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: green-app
+    namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
+      replica: green
+  template:
+    metadata:
+      labels:
+        app: myapp
+        replica: green
+    spec:
+      containers:
+      - name: myapp
+        image: saumik8763/my-custom-nginx:v2
+        ports:
+          - name: http
+            containerPort: 80
